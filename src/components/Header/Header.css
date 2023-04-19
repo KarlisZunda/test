@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+}
+
+body {
+  padding-top: 4vh;
+}
+
+h1,
+h2 {
+  font-family: Raleway;
+  font-weight: 400;
+}
+
+.flex {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  padding: 10px 0 10px 10px;
+}
+.flex h1 {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.flex .house-icon {
+  margin-right: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.bottom-hr {
+  margin-bottom: 10px;
+}
+
+.news-nav {
+  padding: 0 10px 10px 10px;
+}
+.news-nav h2 {
+  margin: 10px 0 10px 10px;
+}
+.news-nav .navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 5px 10px 15px 5px;
+}
+.news-nav .navigation .item1 {
+  display: flex;
+}
+.news-nav .navigation .item1 .search {
+  font-size: 0.8rem;
+  padding: 5px 20px 5px 10px;
+  border-radius: 10px;
+  border: 1px solid;
+  width: 200px;
+}
+.news-nav .navigation .item1 .search:focus {
+  border: 1p solid black;
+}
+.news-nav .navigation .item1 .search-btn {
+  background-color: rgb(240, 240, 240);
+  margin-left: -15px;
+  border-radius: 0 10px 10px 0;
+  padding: 0 20px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.news-nav .navigation .item1 .search-btn .search-icon {
+  font-size: 16px;
+}
+.news-nav .navigation .item1 button:hover {
+  background-color: rgb(220, 220, 220);
+}
+.news-nav .navigation .filter-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: background-color 0.2s;
+  width: 120px;
+  height: 30px;
+}
+.news-nav .navigation .filter-button .chevron-down-icon,
+.news-nav .navigation .filter-button .chevron-up-icon {
+  margin-left: 5px;
+}
+.news-nav .navigation .filter-button:hover {
+  background-color: rgb(220, 220, 220);
+}
+.news-nav .filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px 10px;
+  background-color: rgb(244, 244, 244);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.news-nav .filters button {
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  margin: 5px 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: rgb(223, 223, 223);
+  transition: background-color 0.2s;
+  text-decoration: none;
+}
+.news-nav .filters button:hover {
+  background-color: rgb(212, 212, 212);
+}
+.news-nav .filters button:target {
+  background-color: rgb(197, 197, 197);
+}
+
+.to-home {
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+  transition: -webkit-text-decoration 0.2s font-weight 0.2s;
+  transition: text-decoration 0.2s font-weight 0.2s;
+  transition: text-decoration 0.2s font-weight 0.2s, -webkit-text-decoration 0.2s font-weight 0.2s;
+  font-size: 22px;
+  display: flex;
+  display: inline-block;
+  background-color: rgba(242, 242, 242, 0.2);
+}
+.to-home .chevron-left-icon {
+  font-size: 14px;
+  margin-right: 5px;
+  align-self: center;
+}
+
+.to-home:hover {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 400px) {
+  .flex h1 {
+    font-size: 1.2rem;
+  }
+  .flex .house-icon {
+    font-size: 1rem;
+  }
+  .news-nav {
+    width: 100%;
+  }
+  .news-nav h2 {
+    font-size: 1.25rem;
+  }
+  .news-nav .navigation {
+    flex-direction: column;
+    width: 100%;
+  }
+  .news-nav .navigation .item1 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .news-nav .navigation .item1 .search {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 567px) {
+  .flex h1 {
+    font-size: 1.2rem;
+  }
+  .flex .house-icon {
+    font-size: 1rem;
+  }
+  .news-nav h2 {
+    font-size: 1.25rem;
+  }
+  .news-nav .navigation {
+    flex-direction: column;
+  }
+  .news-nav .navigation .item1 {
+    margin-bottom: 10px;
+    width: 80%;
+  }
+  .news-nav .navigation .item1 .search {
+    width: 45vw;
+  }
+}/*# sourceMappingURL=Header.css.map */

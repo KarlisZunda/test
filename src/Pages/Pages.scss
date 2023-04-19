@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+  box-sizing: border-box;
+}
+
+.post-container {
+  width: 70vw;
+  margin: auto;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+
+
+  img {
+    height: 30vw;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 5px;
+  }
+
+  .article-time {
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 10px;
+  }
+
+  .article-author {
+    font-size: 1rem;
+    color: gray;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    line-height: 1.7rem;
+  }
+
+  .article-content {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.not-found {
+  padding-top: 20px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .post-container {
+    margin-top: 4vw;
+    width: 80vw;
+
+    img {
+      height: 50vw;
+    }
+
+    h1 {
+      font-size: 1.3rem;
+    }
+
+    .article-author {
+      font-size: 0.9rem;
+    }
+
+    .article-time {
+      font-size: 0.9rem;
+    }
+
+    .article-content {
+      font-size: 1rem;
+    }
+  }
+}
